@@ -29,5 +29,20 @@ class Ads extends CI_Controller {
 		$this->load->view('home/base/footer');
 	}
 
+		/*
+	*	Add an @see $id to the single_ad function 
+	*	thus getting the ad single product file 
+	*/
+	public function single_ad(){
+
+		$this->load->view('home/base/head');
+		$this->load->view('home/base/nav');
+		$this->load->view('ads/banner');
+		// $this->load->view('ads/');
+		$this->load->view('ads/single_ad');
+		// $this->load->view('ads/all_ads');
+		$this->load->view('home/base/footer');
+	}
+	
 	
 }
